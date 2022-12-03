@@ -1,4 +1,5 @@
 import React from 'react';
+import './Employee.css';
 import Navbar from './Navbar';
 import Sidebar from './Sidebar';
 import InputField from './InputField';
