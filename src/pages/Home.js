@@ -1,7 +1,8 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
-import Dashboard from './Dashboard';
+import './Home.css';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import Dashboard from '../components/Dashboard';
 import DashboardDetails from './DashboardDetails';
 export default function Home() {
     return (
@@ -16,8 +17,6 @@ export default function Home() {
                     info={DashboardDetails.info}
                     svg={DashboardDetails.svg}
                 />)}
-           
-
         </>
     )
 }

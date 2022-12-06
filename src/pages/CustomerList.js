@@ -1,6 +1,7 @@
 import React from 'react'
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
+import './CustomerList.css'
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
 import { Link } from 'react-router-dom';
 import { FiGrid, FiList } from 'react-icons/fi';
 import { HiSearch, HiOutlineUserAdd } from 'react-icons/hi';

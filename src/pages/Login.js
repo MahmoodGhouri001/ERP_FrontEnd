@@ -1,18 +1,19 @@
-import React from 'react'
+import React from 'react';
+import './Login.css';
 import { Link } from 'react-router-dom'
-import InputField from './InputField'
-import login from './login.svg'
+import PrimaryInputField from '../components/PrimaryInputField'
+import login from '../media/login.svg'
 export default function Login() {
   return (
     <div className="Login-container">
       <div className="login-page">
         <div className="login-area">
           <h2>Login to your account</h2>
-          <InputField
+          <PrimaryInputField
             type="email"
             placeholder="Email"           
           />
-          <InputField
+          <PrimaryInputField
             type="password"
             placeholder="Password"
           />

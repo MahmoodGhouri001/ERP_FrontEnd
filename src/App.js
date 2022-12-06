@@ -1,14 +1,14 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Home from './components/Home';
-import Login from './components/Login';
-import Register from './components/Register';
-import Profile from './components/Profile';
-import Customer from './components/Customer';
-import CustomerGrid from './components/CustomerGrid';
-import CustomerList from './components/CustomerList';
-import Employees from './components/Employees';
-import ErrorPage from './components/ErrorPage';
+import Home from './pages/Home';
+import Login from './pages/Login';
+import Register from './pages/Register';
+import Profile from './pages/Profile';
+import Customer from './pages/Customer';
+import CustomerGrid from './pages/CustomerGrid';
+import CustomerList from './pages/CustomerList';
+import Employees from './pages/Employees';
+import ErrorPage from './pages/ErrorPage';
 import './App.css';
 
 function App() {

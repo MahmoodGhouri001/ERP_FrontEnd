@@ -1,26 +1,14 @@
 import React from 'react';
-import profile from './profile.jpg';
-import ProfileInputs from './Profile_Inputs'
+import './Profile.css';
+import {links, inputs} from '../pages/ProfileDetails';
+import profile from '../media/profile.jpg';
+import ProfileInputs from '../components/Profile_Inputs'
 import { HiDocumentText, HiOutlineArrowLeft } from "react-icons/hi";
 import { Link } from 'react-router-dom';
-const links = [
-    { name: "Overview", path: "/" },
-    { name: "Task", path: "task" },
-    { name: "Appointment", path: "appointment" },
-    { name: "Billing", path: "billing" },
-    { name: "Notes", path: "notes" },
-    { name: "Documents", path: "documents" },
-]
-const inputs = [
-    { type: "radio", value: "Contact client for outstanding invoices (Monthly)", name: "task", date: "Sat, 19 Nov" },
-    { type: "radio", value: "Share consultation forms before the next appointment", name: "task", date: "Sat, 19 Nov" },
-    { type: "radio", value: "Schedule next personal consultation", name: "task", date: "Sat, 19 Nov" }
-]
 export default function Profile() {
     return (
         <>
-        <div className="Profile-container">
-        
+        <div className="Profile-container">       
             <div className="client-area">
             <div className="client-heading">
                 <div className="title">
@@ -41,6 +29,7 @@ export default function Profile() {
                     <div className="employee-details">
 
                         <div className="employee-key">
+                       
                             <label>Job Title :</label>
                             <label>Deparment :</label>
                             <label>Business Unit :</label>

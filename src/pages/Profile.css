@@ -1,0 +1,220 @@
+/* Profile page css */
+@media only screen and (min-width:600px){
+  .Profile-container{
+        grid-template-columns: 30% 70% ;
+        grid-template-areas: "client-area dashboard-area ";
+      }
+    }
+/* client area ---*/
+.Profile-container{
+    background-color:#1d70ed;
+  }
+  .client-heading{
+    width: 93%;
+    background-color: #FAFAFA;
+    border-radius: 10px;
+  }
+  .left-arrow svg{
+    width:25px;
+    height:25px;
+    margin: 8px;
+  }
+  .label-top{
+  margin:8px;
+  }
+  .title{
+    display: flex;
+   font-size:1.2em;
+  }
+  h2{
+    margin-left:15px;
+  }
+  .client-area{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-around;
+    margin-left:25px;
+    background-color:#FFFFFF;
+    /* background-color:#DADEE9; */
+    width: 576px;
+    height: 928px;
+  }
+  .img-card{
+    border-radius: 10px;
+    /* background-color: #DADEE9; */
+    background-color: #FAFAFA;
+    width:93%;
+    height:200px;
+  }
+  .img img{
+    width:120px;
+    height: 120px;
+    margin:15px 0px 0px 15px;
+    border-radius: 30px;
+  }
+  .employee-container, .personal-container{
+    border-radius: 10px;
+    background-color: #FAFAFA;
+    /* background-color: #DADEE9; */
+    width:93%;
+    height:330px;
+  }
+  .employee-details, .personal-details{
+    display:flex;
+    width:100%;
+    height:255px;
+    font-size:1.2em;
+  }
+  .employee-key, .personal-key{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width:30%;
+    height:255px;
+    margin-left:20px;
+    
+  }
+  .employee-value, .personal-value{
+    display:flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    width:70%;
+    height:255px;
+  }
+  h3{
+    margin-left: 20px;
+  }
+  
+  /* dashboard area--- */
+   .dashboard-area{
+    display:flex;
+    flex-direction: column;
+    background-color:#FFFFFF;
+    width: 1344px;
+    height:928px;
+   
+  } 
+   .profile-menu{
+    width: 1335px;
+    height: 49px;
+    background-color:#FAFAFA;
+    border-radius:10px;
+    /* margin-top:10px; */
+  } 
+  .menu-items{
+    display:flex;
+    justify-content:space-evenly;
+    margin-top:15px;
+    
+  }
+  .menu-items li, a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+  } 
+  .latest-task{
+    display: flex;
+    flex-direction: column;
+    /* background-color:#FAFAFA; */
+    background-color:#ebf0f4;
+    border-radius:10px;
+    margin-top:5px;
+    width: 1335px;
+    height: 260px;
+  } 
+   .task-heading, .document-heading, .notes-heading{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-right: 30px;
+  } 
+  .task-content{
+    display: flex;
+    flex-direction: column;
+    margin:10px;
+  } 
+  .profile-input{
+    display: flex;
+    font-size:1.2em;
+    margin:10px;
+  } 
+  .profile-input label{
+     margin-left:10px
+  }
+  .profile-input span{
+    margin-left:20px;
+  } 
+  .documents-and-notes{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color:#FAFAFA;
+    border-radius:10px;
+    margin-top:5px;
+    width: 1335px;
+    height: 595px;
+  }
+  .document-area{
+    display:flex;
+    flex-wrap: wrap;
+    width:1280px;
+    height:150px;
+  } 
+  .document-card{
+   display: flex; 
+   width:300px;
+   height:150px;
+   margin:5px;
+  } 
+  .document-details{
+    display: flex;
+    flex-direction: column;
+    background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(66,68,230,1) 0%, rgba(0,212,255,1) 90%);
+    /* background-color:#f8c86f; */
+    border-radius: 15px;
+    margin:0 20px 25px 20px;
+    width:300px;
+    height:150px;
+  } 
+  .document-icon{
+    display: flex;
+    height:35px;
+  }
+   .icon-doc svg{
+    width:30px;
+    height:40px;
+    margin:5px;
+    text-align: center;
+  }
+  .document-content{
+    text-align: center;
+    font-size:1.2em;
+   
+  }
+  
+  .notes-container{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:1335px;
+    height:350px;
+    margin-top:10px;
+  }
+  .notes-area{
+    display:flex;
+    width: 1335px;
+    height:260px;
+  } 
+   .note-card{
+    display:flex;
+    border-radius: 10px;
+    background-color:#ebf0f4;
+    width:425px;
+    height:260px;
+    margin:5px;
+    text-align: center;
+  }
+  .content p{
+    margin:5px;
+  } 

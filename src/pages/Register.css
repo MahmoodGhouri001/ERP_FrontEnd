@@ -1,0 +1,57 @@
+@media only screen and (min-width:600px){
+    .Registration-container{
+            grid-template-columns: 30% 70% ;
+            grid-template-areas: "registration-page side-img ";
+          }
+      }
+    
+      /* Register page */
+      .Registration-container{
+        display:grid;
+        width:1920px;
+        height:928px;
+        grid-area:
+        "registration-page"
+        "side-img"
+      }
+     .registration-page{
+        display:flex;
+        flex-direction: column;
+        text-align: center;
+        background: rgb(2,0,36);
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,44,164,1) 0%, rgba(0,212,255,1) 90%);
+      }
+    
+    .signup-area{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:576px;
+        height:600px;
+        position: absolute;
+        top:20%;
+        left:13%;
+        border-radius:15px;
+        background-color: #ffffff;
+      }
+      .side-img{
+        display:flex;
+        flex-direction: column;
+        width:1344px;
+        height:928px;
+        text-align: center;
+      }   
+     .btn-signup{
+        width:20%;
+        border-radius: 10px;
+        padding:10px;
+        background-color: #4080ce;
+        color: #ffff;
+      }
+      .btn:hover{
+        cursor: pointer;
+      }
+      .signup-link, .text{
+        margin:8px;
+      }

@@ -1,7 +1,8 @@
 import React from 'react';
-import InputField from './InputField';
+import './Register.css';
+import PrimaryInputField from '../components/PrimaryInputField';
 import RegistrationDetails from './RegistrationDetails';
-import signup from './signup.svg'
+import signup from '../media/signup.svg'
 export default function Register() {
     return (
         <div className="Registration-container">
@@ -9,7 +10,7 @@ export default function Register() {
                 <div className="signup-area">
                     <h2>Connect with us</h2>
                     <div className="signup-input">
-                        {RegistrationDetails.map((RegistrationDetails) => <InputField
+                        {RegistrationDetails.map((RegistrationDetails) => <PrimaryInputField
                             key={RegistrationDetails.id}
                             type={RegistrationDetails.type}
                             placeholder={RegistrationDetails.placeholder}

@@ -1,0 +1,68 @@
+/* Login css */
+.Login-container{
+    display:grid;
+    width:1920px;
+    height:928px;
+    grid-area:
+    "login-page"
+    "side-img"
+  }
+  .Profile-container{
+    display:grid;
+    grid-gap:1em;
+    width: 1850px;
+    height:928px;
+    grid-area: 
+    "client-area"
+    "dashboard-area"
+    ;
+  }
+  @media only screen and (min-width:600px){
+    .Login-container{
+      grid-template-columns: 30% 70% ;
+      grid-template-areas: "login-page side-img ";
+    }
+  }
+  .login-page{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(44,44,164,1) 0%, rgba(0,212,255,1) 90%);
+    
+  }
+  .login-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:576px;
+    height:600px;
+    position: absolute;
+    top:20%;
+    left:13%;
+    border-radius:15px;
+    background-color: #ffffff;
+  }
+  .side-img{
+    display:flex;
+    flex-direction: column;
+    width:1344px;
+    height:928px;
+    text-align: center;
+  }
+
+  .btn-login{
+    width:20%;
+    border-radius: 10px;
+    padding:10px;
+    background: #4080ce;
+    color:#ffff;
+  
+  }
+  .btn:hover{
+    cursor: pointer;
+  }
+  .signup-link, .text{
+    margin:8px;
+  }

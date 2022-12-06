@@ -1,18 +1,19 @@
 import React from 'react';
-import CustomerCard from './CustomerCard';
+import './CustomerGrid.css';
+import Navbar from '../components/Navbar';
+import Sidebar from '../components/Sidebar';
+import CustomerCard from '../components/CustomerCard';
 import CustomerDetails from './CustomerDetails';
-import {HiSearch, HiOutlineUserAdd} from 'react-icons/hi'
-import Navbar from './Navbar';
-import Sidebar from './Sidebar';
+import { HiSearch, HiOutlineUserAdd } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
-import {FiGrid, FiList} from 'react-icons/fi';
-export default function Customer() {
-  return (
-    <>
-      <Navbar />
-      <Sidebar />
-      <div className="Customer-container">
-      <div className="customer-nav-top">
+import { FiGrid, FiList } from 'react-icons/fi';
+export default function CustomerGrid() {
+    return (
+        <>
+            <Navbar />
+            <Sidebar />
+            <div className="Customer-container">             
+                <div className="customer-nav-top">
                     <div className="customerlist-heading">
                         <h2>Customers</h2>
                     </div>
@@ -26,7 +27,8 @@ export default function Customer() {
                             <Link to="/customer-list"> <button><i><FiList /></i></button></Link>
                         </div>
                         <div className="customerlist-btn">
-                            <button className="export-btn">Export</button>          
+                            <button className="export-btn">Export</button>
+                           
                             <button className="add-btn"><i><HiOutlineUserAdd /></i> customer</button>
                         </div>
                     </div>
@@ -51,8 +53,6 @@ export default function Customer() {
                 </div>
 
             </div>
-
-
-    </>
-  )
+        </>
+    )
 }
