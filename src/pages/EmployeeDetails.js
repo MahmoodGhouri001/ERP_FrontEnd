@@ -1,6 +1,6 @@
 import { FiEdit } from "react-icons/fi";
 import { MdDelete } from 'react-icons/md';
-const EmployeeDetails=[
+export const EmployeeDetails=[
     {
         checkbox: <input type="checkbox" />,
         id: 1,
@@ -11,8 +11,8 @@ const EmployeeDetails=[
         address:"Hyderabad, Telangana.",
         dateofbirth:"26/06/1997",
         contactcreated:"12/05/2022",
-        edit: <button><i><FiEdit/></i></button>,
-        delete: <button><i><MdDelete/></i></button>,
+        edit: <button><FiEdit/></button>,
+        delete: <button><MdDelete/></button>,
     },   
     {
         checkbox: <input type="checkbox" />,
@@ -24,8 +24,7 @@ const EmployeeDetails=[
         address:"Hyderabad, Telangana.",
         dateofbirth:"26/06/1997",
         contactcreated:"12/05/2022",
-        edit: <button><i><FiEdit/></i></button>,
-        delete: <button><i><MdDelete/></i></button>,
+        edit: <button><FiEdit/></button>,
+        delete: <button><MdDelete/></button>,
     },   
 ]
-export default EmployeeDetails

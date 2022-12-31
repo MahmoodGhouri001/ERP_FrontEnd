@@ -2,6 +2,7 @@ import React from 'react';
 import './CustomerGrid.css'
 import CustomerCard from '../components/CustomerCard';
 import CustomerDetails from './CustomerDetails';
+import MediumButton from '../components/MediumButton';
 import {HiSearch, HiOutlineUserAdd} from 'react-icons/hi'
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
@@ -23,12 +24,20 @@ export default function Customer() {
                             <i className="customer-search-icon"><HiSearch /></i>
                         </div>
                         <div className="list-and-grid-btn">
-                            <Link to="/customer-grid"><button><i><FiGrid /></i></button></Link>
-                            <Link to="/customer-list"> <button><i><FiList /></i></button></Link>
+                            <Link to="/customer-grid"><button><FiGrid /></button></Link>
+                            <Link to="/customer-list"> <button><FiList /></button></Link>
                         </div>
-                        <div className="customerlist-btn">
-                            <button className="export-btn">Export</button>          
-                            <button className="add-btn"><i><HiOutlineUserAdd /></i> customer</button>
+                        <div className="customerlist-btn">                   
+                          <MediumButton 
+                            button_name="Export"
+                        />
+                        <Link to="/add-customer">
+                          <MediumButton 
+                            button_name="Customer"
+                            add_icon= <HiOutlineUserAdd/>
+                        />
+                        </Link>
+                 
                         </div>
                     </div>
                 </div>

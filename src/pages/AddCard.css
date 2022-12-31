@@ -1,0 +1,33 @@
+.AddCard-main-container{
+    width:100%;
+    height: 870px;
+}
+.add-card-top-nav-container{
+    display: flex;  
+    align-items: center;
+}
+.add-card-form-container{
+    width:100%;
+    height:350px;
+}
+.add-card-form-area{
+    display:flex;
+    width:650px;
+    height:350px;
+    margin-top:20px;
+    background-color:#F5F5F7;
+    margin:10px 0 0 20px;
+}
+.add-card-form-key{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width:180px;
+    height:350px;
+}
+.add-card-form-value{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:center;
+}

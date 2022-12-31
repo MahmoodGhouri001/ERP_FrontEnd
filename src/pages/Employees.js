@@ -1,9 +1,11 @@
 import React from 'react';
 import './Employee.css';
-import EmployeeDetails from '../pages/EmployeeDetails';
+import {Link} from 'react-router-dom';
+import { HiOutlineUserAdd } from 'react-icons/hi';
+import EmployeeTable from '../components/EmployeeTable';
 import SecondaryInputField from '../components/SecondaryInputField';
-import PrimaryButton from '../components/PrimaryButton';
-import SecondaryButton from '../components/SecondaryButton';
+import LargeButton from '../components/LargeButton';
+import MediumButton from '../components/MediumButton';
 import Navbar from '../components/Navbar';
 import Sidebar from '../components/Sidebar';
 export default function Employees() {
@@ -15,9 +17,12 @@ export default function Employees() {
         <div className="employee-top-nav">
           <div className="nav-items1">
             <h2>Employees</h2>
-            <SecondaryButton
+            <Link to="/add-employee">
+            <MediumButton
+              add_icon=<HiOutlineUserAdd />
               button_name="Employee"
             />
+            </Link>
           </div>
           <div className="nav-items2">
             <SecondaryInputField
@@ -33,43 +38,22 @@ export default function Employees() {
               <option value="Banglore">Banglore</option>
               <option value="Delhi">Delhi</option>
             </select>
-            <PrimaryButton
+            <LargeButton
               button_name="Search"
             />
           </div>
         </div>
         <div className="employee-table-container">
-          <table className="table-content">
-            <thead>
-              <tr>
-                <th><input type="checkbox" /></th>
-                <th>Full Name</th>
-                <th>Title</th>
-                <th>Email</th>
-                <th>Address</th>
-                <th>Date of Birth</th>
-                <th>Contact created</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {EmployeeDetails.map((EmployeeDetails, index) =>
-                <tr key={index}>
-                  <td>{EmployeeDetails.checkbox}</td>
-                  <td><img src={EmployeeDetails.profile}/>{EmployeeDetails.fullname}</td>
-                  <td>{EmployeeDetails.title}</td>
-                  <td>{EmployeeDetails.email}</td>
-                  <td>{EmployeeDetails.address}</td>
-                  <td>{EmployeeDetails.dateofbirth}</td>
-                  <td>{EmployeeDetails.contactcreated}</td>
-                  <td>{EmployeeDetails.edit}{EmployeeDetails.delete}</td>
-                </tr>
-              )}
-
-
-            </tbody>
-          </table>
-
+          <EmployeeTable
+            checkbox=<input type="checkbox" />
+            name="Full Name"
+            title="Title"
+            email="Email"
+            address="Address"
+            dateofbirth="Date of Birth"
+            contactcreated="Contact Created"
+            action="Action"
+          />
         </div>
       </div>
 

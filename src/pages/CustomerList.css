@@ -38,8 +38,9 @@
   }
   .customerlist-btn{
     display:flex;
-    width:200px;
-    height:35px;
+    width:250px;
+    height:38px;
+    align-items: center;
     justify-content:space-evenly;
   }
   .add-btn{

@@ -9,7 +9,7 @@ export default function Navbar() {
                 <Link to="/" className="link"><span> Inventory manager</span></Link>
             </div>
             <div className="search-bar">
-                <i><FaSearchDollar /></i>
+                <FaSearchDollar />
                 <input type="text" name="" id="" placeholder='Search' />
             </div>
             <div className="span-area">

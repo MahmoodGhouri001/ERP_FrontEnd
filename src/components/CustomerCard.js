@@ -9,9 +9,9 @@ export default function CustomerCard(props) {
       </div>
       <div className="customer-info">
         <h3>{props.customer_name}</h3>
-        <p> <i>{props.hashtag_icon}</i>{props.customer_id}</p>
-        <p><i>{props.mobile_icon}</i>{props.customer_mobile}</p>
-        <p><i>{props.email_icon}</i> {props.customer_email}</p>
+        <p>{props.hashtag_icon}{props.customer_id}</p>
+        <p>{props.mobile_icon}{props.customer_mobile}</p>
+        <p>{props.email_icon}{props.customer_email}</p>
       </div>
     </div>
     <div className="customer-info-more">
